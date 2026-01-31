@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Básica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .content-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin: 15px 0;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .code-example {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        
+        .button:hover {
+            background: #45a049;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .image-placeholder {
+            background: #e0e0e0;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mi Primera Página Web</h1>
+            <p class="subtitle">Una plantilla HTML básica y funcional</p>
+        </header>
+        
+        <div class="content-section">
+            <h2>Introducción a HTML</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Describe la estructura de una página web utilizando elementos que le dicen al navegador cómo mostrar el contenido.</p>
+            
+            <div class="highlight">
+                <p>Esta página es un ejemplo básico de cómo estructurar contenido usando HTML semántico y estilos CSS internos.</p>
+            </div>
+            
+            <div class="image-placeholder">
+                [Imagen ilustrativa sobre HTML]
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Características Principales</h2>
+            <ul>
+                <li><strong>Estructura clara:</strong> Uso de elementos semánticos</li>
+                <li><strong>Diseño responsive:</strong> Se adapta a diferentes dispositivos</li>
+                <li><strong>Código limpio:</strong> Fácil de entender y modificar</li>
+                <li><strong>Estilos integrados:</strong> CSS dentro del mismo documento</li>
+            </ul>
+        </div>
+        
+        <div class="content-section">
+            <h2>Ejemplo de Código</h2>
+            <p>Aquí hay un ejemplo básico de código HTML:</p>
+            
+            <div class="code-example">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Ejemplo&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Hola Mundo&lt;/h1&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Pasos para Continuar</h2>
+            <ol>
+                <li>Modifica el contenido de esta página</li>
+                <li>Experimenta con los estilos CSS</li>
+                <li>Añade más secciones según necesites</li>
+                <li>Prueba la página en diferentes navegadores</li>
+            </ol>
+            
+            <a href="#" class="button">Aprender Más</a>
+        </div>
+        
+        <footer>
+            <p>© 2023 Mi Página Básica. Todos los derechos reservados.</p>
+            <p>Esta es una página de ejemplo con alrededor de 100 líneas de código.</p>
+        </footer>
+    </div>
+</body>
+</html>
